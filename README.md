@@ -38,10 +38,11 @@ var interval = setInterval(function(){
     // If CLIP buttons are all clicked but Next pages available then click on the next page
     else if (buttons.length === 0) {
         nextLink.trigger( "click" );
-        //Change the below from 50 to 3000, if you have a slow computer.
-        sleep(50);
+        //Change the below from 1000 to 3000, if you have a slow computer.
+        sleep(1000);
     }
-}, 3000);
+    //Change the below from 50 to 3000, if you have a slow computer.
+}, 50);
 
 ```
     
