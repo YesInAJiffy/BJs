@@ -7,7 +7,7 @@ https://www.bjs.com/myCoupons
   - Goto Console in DevTools
   - Paste the below code
 
- New Script
+ **NEW SCRIPT (Updated on 1st July 2023)**
 ```js
 
 var script = document.createElement('script');script.src = "https://code.jquery.com/jquery-3.4.1.min.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -51,7 +51,7 @@ var interval = setInterval(function(){
 
 ```
 
-OLD SCRIPT
+__OLD SCRIPT__
 ```js
 
 // Sleep, this is to introduce latency so the refresh is done properly.
