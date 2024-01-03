@@ -10,7 +10,8 @@ https://www.bjs.com/myCoupons
 # VIDEO TUTORIAL ON HOW TO APPLY
 [![](https://markdown-videos-api.jorgenkh.no/youtube/0pCqwARIc0s)](https://youtu.be/0pCqwARIc0s)
 
-https://studio.youtube.com/video/0pCqwARIc0s
+https://www.youtube.com/watch?v=0pCqwARIc0s
+
 
  **NEW SCRIPT (Updated on 1st July 2023)**
 ```js
@@ -55,6 +56,7 @@ var interval = setInterval(function(){
 
 
 ```
+**Don't USE THIS ONE (Use above script)**
 
 __OLD SCRIPT__
 ```js
