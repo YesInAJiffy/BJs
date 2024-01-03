@@ -7,7 +7,9 @@ https://www.bjs.com/myCoupons
   - Goto Console in DevTools
   - Paste the below code
 
+# VIDEO TUTORIAL ON HOW TO APPLY
 [![](https://markdown-videos-api.jorgenkh.no/youtube/0pCqwARIc0s)](https://youtu.be/0pCqwARIc0s)
+
 https://studio.youtube.com/video/0pCqwARIc0s
 
  **NEW SCRIPT (Updated on 1st July 2023)**
