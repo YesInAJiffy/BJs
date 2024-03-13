@@ -12,8 +12,20 @@ https://www.bjs.com/myCoupons
 
 https://www.youtube.com/watch?v=0pCqwARIc0s
 
+**NEW SCRIPT (Updated on 13th March 2024)**
+```js
 
- **NEW SCRIPT (Updated on 1st July 2023)**
+let buttons = document.getElementsByClassName('Buttonstyle__StyledButton-sc-1p91mnj-0 cyDgas');
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].click();    
+}
+
+
+```
+
+
+ **NEW SCRIPT (DON"T USE Updated on 1st July 2023 - EXPIRED)**
 ```js
 
 var script = document.createElement('script');script.src = "https://code.jquery.com/jquery-3.4.1.min.js";document.getElementsByTagName('head')[0].appendChild(script);
