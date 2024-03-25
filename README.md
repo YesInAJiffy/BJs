@@ -6,6 +6,8 @@ https://www.bjs.com/myCoupons
 - Open Chrome Developer Tools
   - Goto Console in DevTools
   - Paste the below code
+## Detailed steps on the description of the YouTube Video.
+
 
 # VIDEO TUTORIAL ON HOW TO APPLY
 [![](https://markdown-videos-api.jorgenkh.no/youtube/0pCqwARIc0s)](https://youtu.be/0pCqwARIc0s)
