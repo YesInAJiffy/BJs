@@ -1,0 +1,24 @@
+Sub LocalCounter()
+Dim time As Date
+time = Now()
+Dim count As Integer
+count = 20 'For 20 Seconds
+time = DateAdd("s", count, time)
+Do Until time < Now()
+DoEvents
+ActivePresentation.SlideShowWindow.View.Slide.Shapes("countdown").TextFrame.TextRange = Format((time - Now()), "hh:mm:ss")
+Loop
+End Sub
+
+
+Sub FullSlideCounter()
+Dim time As Date
+time = Now()
+Dim count As Integer
+count = 600 'For 10 Minutes
+time = DateAdd("s", count, time)
+Do Until time < Now()
+DoEvents
+ActivePresentation.SlideShowWindow.View.Slide.Shapes("SlideWiseTimer").TextFrame.TextRange = Format((time - Now()), "hh:mm:ss")
+Loop
+End Sub
