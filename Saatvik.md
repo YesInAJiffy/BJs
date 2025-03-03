@@ -1,7 +1,14 @@
 
 
-# Angles of a Polygon
+# Sum of Angles of a Polygon
 (n-2) * 180
 
 
 A regular polygon has each exterior angle measuring 15°. Find the number of sides of this polygon.
+Ans: Interior Angle = 180 - 15 = 165
+Sum of all interior angles = 165.n (where n is the number of sides of the polygon).
+
+(n-2) * 180 = 165 * n
+15 n = 360
+n = 24
+
