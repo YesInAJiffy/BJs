@@ -8,13 +8,65 @@ https://www.bjs.com/myCoupons
   - Paste the below code
 ## Detailed steps on the description of the YouTube Video.
 
-
 # VIDEO TUTORIAL ON HOW TO APPLY
 [![](https://markdown-videos-api.jorgenkh.no/youtube/0pCqwARIc0s)](https://youtu.be/0pCqwARIc0s)
 
 https://www.youtube.com/watch?v=0pCqwARIc0s
 
-**NEW SCRIPT (USE THIS ONE - Updated on 13th March 2024)**
+**NEW SCRIPT (USE THIS ONE - Updated on 6th September 2025)**
+
+```js
+// #!/usr/bin/env node
+//
+// ==UserScript==
+// @name         BJ's Coupon Auto-Clipper
+// @namespace    http://tampermonkey.net/
+// @version      4.0
+// @description  Automatically clips all BJ's coupons as they load on the page
+// @author       You
+// @match        https://www.bjs.com/myCoupons
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Function to clip coupons
+    function clipCoupons() {
+        const buttons = document.querySelectorAll(
+            'button.Buttonstyle__StyledButton-sc-1p91mnj-0.cyDgas'
+        );
+
+        buttons.forEach(btn => {
+            if (!btn.dataset.clicked) {
+                btn.click();
+                btn.dataset.clicked = "true"; // mark so we don't double click
+            }
+        });
+    }
+
+    // Main entry point
+    function main() {
+        clipCoupons();
+
+        // Watch for dynamically loaded coupons
+        const observer = new MutationObserver(() => {
+            clipCoupons();
+        });
+
+        // Start observing the body for added/removed elements
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    }
+
+    // Run script
+    main();
+})();
+```
+
+**OLD SCRIPT (USE THIS ONE - Updated on 13th March 2024)**
 ```js
 
 let buttons = document.getElementsByClassName('Buttonstyle__StyledButton-sc-1p91mnj-0 cyDgas');
@@ -27,7 +79,7 @@ for (let i = 0; i < buttons.length; i++) {
 ```
 
 
- **OLD SCRIPT (DON"T USE Updated on 1st July 2023 - EXPIRED)**
+ **OLDER SCRIPT (DON"T USE Updated on 1st July 2023 - EXPIRED)**
 ```js
 
 var script = document.createElement('script');script.src = "https://code.jquery.com/jquery-3.4.1.min.js";document.getElementsByTagName('head')[0].appendChild(script);
@@ -72,7 +124,7 @@ var interval = setInterval(function(){
 ```
 **Don't USE THIS ONE (Use above script)**
 
-__OLD SCRIPT__
+__OLDEST SCRIPT__
 ```js
 
 // Sleep, this is to introduce latency so the refresh is done properly.
