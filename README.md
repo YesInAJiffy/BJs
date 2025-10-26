@@ -14,6 +14,31 @@ https://www.bjs.com/myCoupons
 
 https://www.youtube.com/watch?v=0pCqwARIc0s
 
+
+**NEW SCRIPT (USE THIS ONE - Updated on 26th October 2025 - Removed the Delays)**
+```js
+
+
+
+let buttons = document.querySelectorAll('button[name="clipToCard"]');
+
+function clickButtonsWithDelay(buttons, delay = 500) {
+    let i = 0;
+    function clickNext() {
+        while (i < buttons.length) {
+            buttons[i].click();
+            i++;
+        } 
+        alert('All buttons have been clicked. If there are unclipped coupons, please refresh the webpage and run the script again!');
+    }
+    clickNext();
+}
+
+clickButtonsWithDelay(buttons, 2); // 2ms delay between clicks
+
+
+```
+
 **NEW SCRIPT (USE THIS ONE - Updated on 25th Sept 2025)**
 ```js
 let buttons = document.querySelectorAll('button[name="clipToCard"]');
