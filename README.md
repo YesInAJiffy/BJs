@@ -39,7 +39,7 @@ clickButtonsWithDelay(buttons, 2); // 2ms delay between clicks
 
 ```
 
-**NEW SCRIPT (USE THIS ONE - Updated on 25th Sept 2025)**
+**OLD SCRIPT (DON'T USE THIS ONE - Updated on 25th Sept 2025)**
 ```js
 let buttons = document.querySelectorAll('button[name="clipToCard"]');
 
